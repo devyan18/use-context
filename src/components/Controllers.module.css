@@ -24,3 +24,22 @@
   background-color: #333;
   color: #aaa;
 }
+
+.createButton {
+  padding: 6px 12px;
+
+  background-color: #111;
+  border: none;
+  color: #fff;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+.createButton:hover {
+  background-color: #333;
+}
+
+.createButton:active {
+  background-color: #333;
+  color: #aaa;
+}

@@ -18,9 +18,13 @@
 .container > span {
   pointer-events: none;
   user-select: none;
+  max-width: 200px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
-.container > button {
+.container > a {
   background-color: transparent;
   color: white;
   border: none;
@@ -38,11 +42,11 @@
   border-radius: 3px;
 }
 
-.container > button:hover {
+.container > a:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.container > button:active {
+.container > a:active {
   background-color: rgba(255, 255, 255, 0.1);
   color: rgba(255, 255, 255, 0.1);
 }

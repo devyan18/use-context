@@ -3,8 +3,9 @@ import styles from "./Task.module.css";
 import { useId } from "react";
 import { BsCheck2Square, BsSquare } from "react-icons/bs";
 import { BiSolidEdit } from "react-icons/bi";
+import { Link } from "react-router-dom";
 
-const Task = ({ title, completed, handleComplete, handleEdit }) => {
+const Task = ({ taskId, title, completed, handleComplete }) => {
   const ref = useId();
 
   return (
@@ -16,9 +17,9 @@ const Task = ({ title, completed, handleComplete, handleEdit }) => {
       <span style={{ textDecoration: completed ? "line-through" : "none" }}>
         {title}
       </span>
-      <button onClick={handleEdit}>
+      <Link to={`/${taskId}`}>
         <BiSolidEdit size={18} />
-      </button>
+      </Link>
     </div>
   );
 };
