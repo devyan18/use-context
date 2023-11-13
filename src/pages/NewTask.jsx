@@ -1,7 +1,10 @@
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { TasksContext } from "../providers/TasksProvider";
 
-const NewTask = ({ addNewTaskToList }) => {
+const NewTask = () => {
+  const { addNewTaskToList } = useContext(TasksContext);
+
   const navigate = useNavigate();
 
   const [title, setTitle] = useState("");

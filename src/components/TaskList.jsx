@@ -1,9 +1,13 @@
+import { useContext } from "react";
 import Task from "./Task";
+import { TasksContext } from "../providers/TasksProvider";
 
-const TaskList = ({ tasks, handleComplete }) => {
+const TaskList = () => {
+  const { allTasks, handleComplete } = useContext(TasksContext);
+
   return (
     <>
-      {tasks.map((task) => {
+      {allTasks.map((task) => {
         return (
           <Task
             key={task.id}

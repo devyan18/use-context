@@ -1,11 +1,11 @@
 import Controllers from "../components/Controllers";
 import TaskList from "../components/TaskList";
 
-const AllTasks = ({ deleteCompletedTasks, handleComplete, allTasks }) => {
+const AllTasks = () => {
   return (
     <div>
-      <Controllers onDelete={deleteCompletedTasks} />
-      <TaskList tasks={allTasks} handleComplete={handleComplete} />
+      <Controllers />
+      <TaskList />
     </div>
   );
 };

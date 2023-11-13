@@ -1,7 +1,10 @@
 import { useNavigate, useParams } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import { TasksContext } from "../providers/TasksProvider";
 
-const OneTask = ({ changeTitleTask, allTasks }) => {
+const OneTask = () => {
+  const { changeTitleTask, allTasks } = useContext(TasksContext);
+
   const { taskId } = useParams();
 
   const [title, setTitle] = useState("");

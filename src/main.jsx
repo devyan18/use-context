@@ -3,8 +3,12 @@ import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
 
+import { TasksProvider } from "./providers/TasksProvider.jsx";
+
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>
+  <TasksProvider>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </TasksProvider>
 );
