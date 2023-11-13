@@ -1,0 +1,26 @@
+.container {
+  background-color: #222;
+  color: #fff;
+
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+
+.container > button {
+  padding: 6px 12px;
+
+  background-color: #111;
+  border: none;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.container > button:hover {
+  background-color: #333;
+}
+
+.container > button:active {
+  background-color: #333;
+  color: #aaa;
+}

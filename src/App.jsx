@@ -1,12 +1,11 @@
-import Task from "./components/Task";
-import tasks from "./tasks.json";
+import Router from "./Router";
+import Controllers from "./components/Controllers";
 
 function App() {
   return (
     <div>
-      {tasks.map((task) => (
-        <Task key={task.id} completed={task.completed} title={task.title} />
-      ))}
+      <Controllers />
+      <Router />
     </div>
   );
 }

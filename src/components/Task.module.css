@@ -19,3 +19,30 @@
   pointer-events: none;
   user-select: none;
 }
+
+.container > button {
+  background-color: transparent;
+  color: white;
+  border: none;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  padding: 0;
+
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.container > button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.container > button:active {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.1);
+}

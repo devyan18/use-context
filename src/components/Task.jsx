@@ -2,8 +2,9 @@ import styles from "./Task.module.css";
 
 import { useId } from "react";
 import { BsCheck2Square, BsSquare } from "react-icons/bs";
+import { BiSolidEdit } from "react-icons/bi";
 
-const Task = ({ title, completed, toggleComplete }) => {
+const Task = ({ title, completed, handleComplete, handleEdit }) => {
   const ref = useId();
 
   return (
@@ -11,10 +12,13 @@ const Task = ({ title, completed, toggleComplete }) => {
       <label htmlFor={ref}>
         {completed ? <BsCheck2Square size={20} /> : <BsSquare size={16} />}
       </label>
-      <input type="checkbox" id={ref} hidden onChange={toggleComplete} />
+      <input type="checkbox" id={ref} hidden onChange={handleComplete} />
       <span style={{ textDecoration: completed ? "line-through" : "none" }}>
         {title}
       </span>
+      <button onClick={handleEdit}>
+        <BiSolidEdit size={18} />
+      </button>
     </div>
   );
 };
