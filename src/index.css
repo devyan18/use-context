@@ -21,3 +21,9 @@ body {
   background-color: #222;
   color: #eef;
 }
+
+.App {
+  display: grid;
+  place-items: center;
+  gap: 1rem;
+}

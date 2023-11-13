@@ -3,7 +3,7 @@ import Controllers from "./components/Controllers";
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <Controllers />
       <Router />
     </div>
