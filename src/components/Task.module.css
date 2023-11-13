@@ -1,0 +1,21 @@
+.container {
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4px;
+}
+
+.container > label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  cursor: pointer;
+}
+
+.container > span {
+  pointer-events: none;
+  user-select: none;
+}
